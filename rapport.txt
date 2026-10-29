@@ -1,0 +1,14 @@
+PULSAR V1.3 — Rapport de test
+Date : 2026-10-29
+Mandat : VALIDE
+Cible : 127.0.0.1:8080
+Mode : TEST SIMULÉ
+
+Détections :
+[TEST SIMULÉ] SQLi — réponse HTTP 500 simulée.
+[TEST SIMULÉ] XSS — marqueur de script présent dans la réponse simulée.
+[TEST SIMULÉ] Traversal — marqueur root:x simulé.
+
+Note : ces détections proviennent des réponses préfabriquées de server.py.
+Elles ne confirment pas la présence de vulnérabilités réelles.
+Le serveur de test est arrêté.
