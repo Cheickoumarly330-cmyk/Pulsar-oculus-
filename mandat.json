@@ -1,0 +1,6 @@
+{
+  "target": "http://localhost:8080",
+  "scope": ["localhost"],
+  "expiration": "2026-12-31",
+  "authorized_by": "Cheick Ly"
+}
