@@ -1,0 +1,17 @@
+name: PULSAR Auto-Scan
+on: [push]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python3 pulsar_bounty.py .
+      - run: |
+          git config user.name "Pulsar Bot"
+          git config user.email "bot@pulsar.dev"
+          git add rapport.txt rapport.json rapport_SHERLOCK.md || true
+          git commit -m "auto: PULSAR scan results" || true
+          git push || true
