@@ -1,9 +1,3 @@
-cat > pulsar_bounty.py << 'PY'
-#!/usr/bin/env python3
-"""
-PULSAR BOUNTY V2.1 - By Cheick
-Fixes: Export report, Withdrawals protected, Skip folders
-"""
 import os, re, json, argparse
 from pathlib import Path
 from datetime import datetime
