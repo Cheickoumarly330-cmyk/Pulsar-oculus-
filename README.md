@@ -1,14 +1,13 @@
-# PULSAR OCULUS V1.3
+# PULSAR OCULUS - V2.1 by Cheick 🇲🇱
+![PULSAR](https://github.com/Cheickoumarly330-cmyk/Pulsar-oculus-/actions/workflows/pulsar.yml/badge.svg)
 
-Scanner éthique OCaml développé sur Replit iOS.
+> Auto Scanner for Sherlock / Cantina Bounties - From Bamako
 
-**Sécurité by design :**
-- Mandat obligatoire : refuse tout target != 127.0.0.1
-- Labo inerte local :8080 (réponses préfabriquées, sans exécution)
-- Rapports labellisés [TEST SIMULÉ] pour distinguer du réel
-- Serveur arrêté après test
+### How it works
+- Skips `node_modules`, `lib`, `artifacts`
+- Detects: REENTRANCY, TX_ORIGIN, ACCESS_CONTROL, UNCHECKED_MINT
+- Protects `withdraw` with `onlyOwner` check -> LOW severity
+- Exports: `rapport.json` + `rapport_SHERLOCK.md` + `rapport.txt`
 
-**Stack :** OCaml, Replit, GitHub Mobile
-**Auteur :** Cheick Ly - Bamako
-
-Lien du labo : Replit iOS - 100% localhost
+### Run locally
+python pulsar_bounty.py ./src
