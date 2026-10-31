@@ -58,4 +58,3 @@ if __name__ == "__main__":
     results = scan_folder(args.path)
     export_reports(results)
     print(f"=== FINI: {len(results)} vulns ===")
-PY
